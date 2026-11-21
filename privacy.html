@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Lake Games LLC | Last Roll</title>
+  <meta name="description" content="Privacy Policy for Lake Games LLC and the Last Roll mobile game (iOS & Android), covering Firebase Authentication, multiplayer data, local save data, and account deletion.">
+  <link rel="canonical" href="https://lakegamesllc.com/privacy.html">
+  <meta name="theme-color" content="#0B0D12">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Righteous&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Lake Games LLC Home">
+        <picture>
+          <source srcset="assets/img/lake-games-mark.webp" type="image/webp">
+          <img src="assets/img/lake-games-mark.png" alt="Lake Games LLC pine-over-lake monogram" width="44" height="44">
+        </picture>
+        <span class="brand-name">
+          <span class="gold-text">LAKE GAMES</span>
+          <small>LLC</small>
+        </span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true"><span></span></label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="legal-hero">
+      <p class="eyebrow">Legal · Last Roll &amp; Lake Games LLC</p>
+      <h1>PRIVACY POLICY</h1>
+      <p class="meta">Effective Date: November 21, 2026 &nbsp;·&nbsp; Last Updated: November 21, 2026</p>
+    </div>
+    <hr class="gold-rule">
+
+    <div class="legal">
+      <details class="toc" open>
+        <summary>CONTENTS</summary>
+        <ol>
+          <li><a href="#who-we-are">Who We Are</a></li>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#data-summary">Data Summary</a></li>
+          <li><a href="#firebase-auth">Firebase Authentication</a></li>
+          <li><a href="#multiplayer">Multiplayer Session Data</a></li>
+          <li><a href="#local-data">Local Save Data</a></li>
+          <li><a href="#how-we-use">How We Use Information</a></li>
+          <li><a href="#processors">Third-Party Processors</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#delete-account">Account &amp; Data Deletion</a></li>
+          <li><a href="#children">Children’s Privacy</a></li>
+          <li><a href="#rights">Your Privacy Rights</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#transfers">International Transfers</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ol>
+      </details>
+
+      <article>
+        <h2 id="who-we-are">1. WHO WE ARE</h2>
+        <p>
+          <strong>Lake Games LLC</strong> (“Lake Games,” “we,” “us,” or “our”) is the developer and data controller for the mobile game <strong>Last Roll</strong> and this website (<code>https://lakegamesllc.com</code>).
+        </p>
+        <p>
+          <strong>Registered Address:</strong> 594 North Washington Street, Belchertown, MA 01007, United States<br>
+          <strong>Privacy Contact:</strong> <a href="mailto:vincent@lakegamesllc.com">vincent@lakegamesllc.com</a>
+        </p>
+
+        <h2 id="scope">2. SCOPE</h2>
+        <p>
+          This Privacy Policy explains what information is collected, used, stored, and deleted when you play <strong>Last Roll</strong> on iOS or Android or visit <code>https://lakegamesllc.com</code>.
+        </p>
+
+        <h2 id="data-summary">3. INFORMATION WE COLLECT &amp; APP PRIVACY SUMMARY</h2>
+        <p>
+          We collect only the minimum data needed to authenticate your account, run real-time multiplayer matches, and keep the app reliable. <strong>We do not sell your personal data, display third-party behavioral ads, or track you across other apps or websites.</strong>
+        </p>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+                <th>Linked to Identity</th>
+                <th>Used for Tracking</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Account Identifiers</strong></td>
+                <td>Firebase User ID (UID), Apple/Google provider ID</td>
+                <td>Authentication, session ownership, account recovery</td>
+                <td>Yes (for Apple/Google sign-in)</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td><strong>Contact &amp; Profile Info</strong></td>
+                <td>Display name, email address (only if shared via Apple or Google Sign-In)</td>
+                <td>Displaying your player name in multiplayer; responding to support/deletion requests</td>
+                <td>Yes</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td><strong>Gameplay &amp; Session Data</strong></td>
+                <td>Room codes, turn state, dice state, scores, rematch status</td>
+                <td>Real-time online multiplayer via Firebase Realtime Database</td>
+                <td>Yes (while session is active)</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td><strong>Technical &amp; Diagnostic Data</strong></td>
+                <td>IP address (transient in network requests), device/OS version, Firebase SDK diagnostics</td>
+                <td>Service delivery, security, abuse prevention, stability</td>
+                <td>No</td>
+                <td>No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="firebase-auth">4. FIREBASE AUTHENTICATION</h2>
+        <p>Last Roll uses <strong>Google Firebase Authentication</strong> to identify players and protect multiplayer rooms. You can choose any of the following sign-in methods:</p>
+        <ul>
+          <li><strong>Anonymous Authentication:</strong> Assigns a random, app-specific Firebase User ID (UID) so you can play without providing a name or email address.</li>
+          <li><strong>Sign in with Apple:</strong> Receives an Apple-verified user identifier and, depending on your Apple ID choices, your display name and email address (including Apple’s private relay email address if you choose <em>Hide My Email</em>).</li>
+          <li><strong>Google Sign-In:</strong> Receives your Google-verified user identifier, display name, email address, and profile photo URL as permitted by your Google account consent screen.</li>
+        </ul>
+        <p>We never receive or store your Apple ID or Google password.</p>
+
+        <h2 id="multiplayer">5. MULTIPLAYER SESSION DATA (FIREBASE REALTIME DATABASE)</h2>
+        <p>
+          When you create or join an online multiplayer match in Last Roll, we store temporary session data in <strong>Google Firebase Realtime Database</strong> so all players in the room see synchronized rolls, Banked Tray selections, scores, turn order, and rematch status.
+        </p>
+        <p>
+          Your chosen in-game display name and current match score are visible to the other players in your match. Online multiplayer session records are transient and are removed after the match ends or expires.
+        </p>
+
+        <h2 id="local-data">6. LOCAL SAVE DATA</h2>
+        <p>
+          Game settings (such as audio, visual preferences, and onboarding state), single-player progress, and local Pass &amp; Play match state are stored locally on your device using standard platform storage. Local save data never leaves your device unless you enter an online multiplayer match, and it is removed when you clear the app’s storage or uninstall Last Roll.
+        </p>
+
+        <h2 id="how-we-use">7. HOW WE USE INFORMATION</h2>
+        <ul>
+          <li>To create and maintain your player session and sign-in state.</li>
+          <li>To synchronize real-time online multiplayer games and rematches.</li>
+          <li>To maintain app security, enforce fair play, and prevent abuse.</li>
+          <li>To respond to support inquiries and process account deletion requests.</li>
+        </ul>
+
+        <h2 id="processors">8. THIRD-PARTY SERVICE PROVIDERS</h2>
+        <p>We share data only with the infrastructure providers strictly required to operate Last Roll:</p>
+        <ul>
+          <li><strong>Google Firebase (Google LLC):</strong> Provides Firebase Authentication and Firebase Realtime Database. See <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security</a> and <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
+          <li><strong>Apple Inc.:</strong> Provides Sign in with Apple authentication and App Store distribution. See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a>.</li>
+        </ul>
+        <p>This static website (<code>lakegamesllc.com</code>) is hosted on GitHub Pages and loads Google Fonts (Righteous and Fredoka); it does not use advertising cookies or third-party analytics trackers.</p>
+
+        <h2 id="retention">9. DATA RETENTION</h2>
+        <ul>
+          <li><strong>Authentication Records:</strong> Retained while your account remains active so you can sign back in.</li>
+          <li><strong>Online Multiplayer Sessions:</strong> Deleted after the match concludes or becomes inactive.</li>
+          <li><strong>Support &amp; Deletion Emails:</strong> Retained only as long as needed to fulfill your request and maintain compliance records.</li>
+        </ul>
+
+        <h2 id="delete-account">10. ACCOUNT &amp; DATA DELETION</h2>
+        <div class="card gold-border callout">
+          <h3>HOW TO DELETE YOUR ACCOUNT &amp; DATA</h3>
+          <p>You can permanently delete your Last Roll account and associated server-side data using either of these two methods:</p>
+          <ol>
+            <li>
+              <strong>In-App Deletion:</strong> Open <strong>Last Roll</strong>, tap the <strong>Settings</strong> (gear) icon, and select <strong>Delete Account &amp; Data</strong>. Confirm the prompt to delete your Firebase Authentication account and associated profile data.
+            </li>
+            <li>
+              <strong>Email Request:</strong> Send an email to <a href="mailto:vincent@lakegamesllc.com?subject=Delete%20My%20Account%20-%20Last%20Roll">vincent@lakegamesllc.com</a> with the subject line <strong>“Delete My Account”</strong> from the email address linked to your account (or include your in-game player name and User ID if you played anonymously).
+            </li>
+          </ol>
+          <p>
+            <strong>Timeline &amp; Scope:</strong> We acknowledge email deletion requests within <strong>7 days</strong> and complete full deletion of your Firebase Authentication record and any linked profile or active session data within <strong>30 days</strong>. To delete local save data on your device, uninstall the app or clear its app storage. Certain minimal records may be retained briefly only where required by law or to prevent fraud.
+          </p>
+        </div>
+
+        <h2 id="children">11. CHILDREN’S PRIVACY</h2>
+        <p>
+          Last Roll is not directed to children under 13 years of age (or the applicable minimum age in your jurisdiction), and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through Last Roll, please contact us at <a href="mailto:vincent@lakegamesllc.com">vincent@lakegamesllc.com</a> so we can promptly delete it.
+        </p>
+
+        <h2 id="rights">12. YOUR PRIVACY RIGHTS (GDPR &amp; CCPA/CPRA)</h2>
+        <p>Depending on where you live, you may have the following rights regarding your personal information:</p>
+        <ul>
+          <li><strong>EEA, UK, and Switzerland (GDPR / UK GDPR):</strong> You have the right to access, correct, or erase your personal data, restrict or object to certain processing, request data portability, and lodge a complaint with your local data protection authority. Our legal bases for processing are performance of a contract (providing the game and multiplayer features you request) and legitimate interests (security and reliability).</li>
+          <li><strong>California (CCPA / CPRA) &amp; U.S. State Privacy Laws:</strong> You have the right to know what personal information we collect, request deletion of your personal information, correct inaccurate information, and not be discriminated against for exercising your rights. Lake Games LLC does not sell or “share” (for cross-context behavioral advertising) personal information.</li>
+        </ul>
+        <p>To exercise any of these rights, email <a href="mailto:vincent@lakegamesllc.com">vincent@lakegamesllc.com</a>.</p>
+
+        <h2 id="security">13. SECURITY</h2>
+        <p>
+          All communication between Last Roll and Firebase is encrypted in transit using HTTPS/TLS, and database access is restricted by Firebase Security Rules so players can only read and update authorized session state.
+        </p>
+
+        <h2 id="transfers">14. INTERNATIONAL DATA TRANSFERS</h2>
+        <p>
+          Lake Games LLC is based in the United States, and our cloud provider (Google Firebase) processes data primarily in the United States and other regions where Google operates data centers, subject to appropriate safeguards such as Standard Contractual Clauses where required.
+        </p>
+
+        <h2 id="changes">15. CHANGES TO THIS POLICY</h2>
+        <p>
+          We may update this Privacy Policy from time to time. When we do, we will revise the “Last Updated” date at the top of this page and, for material changes, provide notice in the app or on this website.
+        </p>
+
+        <h2 id="contact">16. CONTACT US</h2>
+        <p>
+          If you have any questions about this Privacy Policy or our data practices, contact:<br>
+          <strong>Lake Games LLC</strong><br>
+          594 North Washington Street, Belchertown, MA 01007, United States<br>
+          Email: <a href="mailto:vincent@lakegamesllc.com">vincent@lakegamesllc.com</a>
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="yr">2026</span> Lake Games LLC. All rights reserved.</span>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="mailto:vincent@lakegamesllc.com">vincent@lakegamesllc.com</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("yr").textContent=new Date().getFullYear();</script>
+</body>
+</html>
