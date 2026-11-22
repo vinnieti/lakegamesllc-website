@@ -16,6 +16,9 @@
   --max: 1120px;
   --font-display: "Righteous", "Arial Black", Impact, sans-serif;
   --font-body: "Fredoka", "Trebuchet MS", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-tag: "Montserrat", "Century Gothic", "Futura", sans-serif;
+  --tag-white: #F5F3EE;
+  --tag-gold: #E2A93B;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -89,6 +92,30 @@ a:hover { color: var(--gold-hi); }
 .showcase img { border-radius: 18px; border: 2px solid #0B0D12; width: 100%; aspect-ratio: 1; }
 .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); margin: 2.25rem 0 .75rem; }
 .hero .lede { max-width: 560px; margin: 0 auto; color: var(--muted); font-size: 1.08rem; }
+
+/* Hero taglines (matched to Last Roll key art) */
+.tag-kicker {
+  display: flex; align-items: center; justify-content: center; gap: 1.1rem;
+  font-family: var(--font-tag); font-weight: 500; text-transform: uppercase;
+  letter-spacing: .22em; color: var(--tag-white); font-size: 1.05rem; margin: 0 0 1.75rem;
+}
+.tag-kicker::before, .tag-kicker::after {
+  content: ""; width: 56px; height: 2px; flex: none;
+  background: linear-gradient(90deg, transparent, var(--tag-gold));
+}
+.tag-kicker::after { background: linear-gradient(90deg, var(--tag-gold), transparent); }
+.hero h1.tag-sub {
+  font-family: var(--font-tag); font-weight: 500; text-transform: uppercase;
+  letter-spacing: .14em; color: var(--tag-white); font-size: clamp(1.35rem, 3.2vw, 2.25rem);
+  line-height: 1.35; margin: 2.25rem 0 1rem;
+}
+.tag-sub .l1 { display: inline-flex; align-items: center; gap: .8rem; font-size: .62em; letter-spacing: .2em; }
+.tag-sub .l1::before { content: ""; width: 38px; height: 2px; background: var(--tag-gold); }
+.tag-sub .l2 { display: block; }
+.tag-sub .g {
+  background: linear-gradient(180deg, #F6D58A 0%, #E2A93B 55%, #B07A22 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
 
 .badges { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
 .store-badge {
@@ -206,6 +233,10 @@ section { padding: 4.5rem 0; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
 @media (max-width: 520px) {
+  .tag-kicker { font-size: .85rem; letter-spacing: .16em; gap: .65rem; }
+  .tag-kicker::before, .tag-kicker::after { width: 32px; }
+  .hero h1.tag-sub { font-size: 1.25rem; letter-spacing: .1em; }
+  .tag-sub .l1::before { width: 24px; }
   .features { grid-template-columns: 1fr; }
   .store-badge { min-width: 0; width: 100%; max-width: 280px; }
 }
